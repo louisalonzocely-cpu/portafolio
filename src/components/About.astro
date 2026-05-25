@@ -1,0 +1,45 @@
+---
+const email = 'luisalonsocelyarias@gmail.com';
+const photoPath = '/images/foto_perfil.jpeg';
+---
+
+<section id="contacto" class="py-24 px-4 bg-dark">
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-accent font-medium tracking-widest uppercase text-sm mb-3">Contacto</p>
+      <h2 class="text-3xl md:text-5xl font-bold">Hablemos</h2>
+      <p class="text-text-muted mt-4 max-w-xl mx-auto">
+        ¿Tienes un proyecto en mente? Estoy listo para ayudarte a crecer en digital.
+      </p>
+    </div>
+
+    <div class="bg-surface/30 backdrop-blur-sm border border-white/5 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-10 items-center">
+      <div class="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden flex-shrink-0 border-2 border-accent/20">
+        {photoPath ? (
+          <img src={photoPath} alt="Luis Alonso Cely" class="w-full h-full object-cover" />
+        ) : (
+          <div class="w-full h-full bg-surface flex items-center justify-center text-6xl">👤</div>
+        )}
+      </div>
+
+      <div class="flex-1 text-center md:text-left">
+        <h3 class="text-2xl font-bold mb-2">Luis Alonso Cely</h3>
+        <p class="text-accent2 font-medium mb-4">Diseñador & Desarrollador Web</p>
+        <p class="text-text-muted leading-relaxed mb-6">
+          De Colombia para el mundo. Me apasiona crear sitios web que combinan diseño atractivo con tecnología moderna. 
+          Ya sea que necesites un sitio desde cero, rediseñar el que tienes, o darle mantenimiento, 
+          estoy aquí para ayudarte a destacar en línea.
+        </p>
+        <a
+          href={`mailto:${email}`}
+          class="inline-flex items-center gap-2 bg-accent hover:bg-accent-light text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Escríbeme
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

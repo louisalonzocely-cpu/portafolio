@@ -1,0 +1,56 @@
+---
+const services = [
+  {
+    icon: '🎨',
+    title: 'Diseño Web',
+    desc: 'Diseños modernos, atractivos y centrados en el usuario para causar una gran primera impresión.',
+  },
+  {
+    icon: '⚡',
+    title: 'Desarrollo Web',
+    desc: 'Sitios rápidos, responsivos y optimizados con tecnologías modernas como Astro y Tailwind.',
+  },
+  {
+    icon: '🔄',
+    title: 'Rediseño de Sitios',
+    desc: 'Transformo sitios web anticuados en experiencias digitales modernas y funcionales.',
+  },
+  {
+    icon: '🔧',
+    title: 'Mantenimiento Web',
+    desc: 'Actualizaciones, mejoras de rendimiento y soporte técnico continuo para tu sitio.',
+  },
+  {
+    icon: '🛒',
+    title: 'Tiendas Online',
+    desc: 'E-commerce y catálogos digitales para que vendas tus productos en línea.',
+  },
+  {
+    icon: '📈',
+    title: 'SEO Básico',
+    desc: 'Optimización en motores de búsqueda para que más clientes te encuentren en Google.',
+  },
+];
+---
+
+<section id="servicios" class="py-24 px-4 bg-dark">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="text-accent font-medium tracking-widest uppercase text-sm mb-3">Servicios</p>
+      <h2 class="text-3xl md:text-5xl font-bold">¿Qué ofrezco?</h2>
+      <p class="text-text-muted mt-4 max-w-xl mx-auto">
+        Soluciones completas para tu presencia digital, desde el diseño hasta el lanzamiento.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {services.map((service) => (
+        <div class="service-card bg-surface/50 backdrop-blur-sm border border-white/5 rounded-2xl p-8">
+          <span class="text-4xl block mb-4">{service.icon}</span>
+          <h3 class="text-xl font-bold mb-3">{service.title}</h3>
+          <p class="text-text-muted leading-relaxed">{service.desc}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
