@@ -2,8 +2,7 @@ import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  site: 'https://louisalonzocely-cpu.github.io',
-  base: '/portafolio',
+  site: 'https://luisalonsocely.netlify.app',
   devToolbar: { enabled: false },
   integrations: [tailwind()],
 });
